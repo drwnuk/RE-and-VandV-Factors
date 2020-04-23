@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{todonotes}
+\title{The impact of process factors and organizational factors on the RE and Verification and Validation Alignment}
+\author{Krzysztof Wnuk, Srinivasu Akkineni}
+\date{April 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Requirements Engineering (RE) and Verification and Validation (V\&V) are treated inseparable and should be activated as early as possible and ensure meeting customer expectations \cite{wnuk2014delicate,bjarnason2014challenges}. Weak co-ordination between RE and V\&V can lead to ineffective development, quality problems, project delays,  additional cost and effort required for removing defects, non-verifiable requirements, lower product quality, uncertain test coverage due to lack of established channels \cite{bjarnason2014challenges,graham2002requirements,sabaliauskaite2010challenges,jones2009enabling}. 
+
+There is a substantial body of knowledge in both RE and V\&V research fields. Despite highlighting RE and V\&V alignment as a focus area for further research in RE  \cite{sabaliauskaite2010challenges} \cite{bjarnason2014challenges} \cite{cheng2007research} and calling for investigating and exploring which additional factors may influence the balance between RE and V\&V, only a handful of studies discussed the alignment between these two areas [9], e.g. how to improve requirements and testing processes [10], link requirements and testing [12][9][11], define alignment practices  \cite{bjarnason2014challenges},  define roles that support the alignment  \cite{bjarnason2014challenges} \cite{sabaliauskaite2010challenges}.
+
+Therefore, this study occupies this gap by providing a systematic and comprehensive summarize of the research area of process and organizational alignment that impact RE and V\&V alignment. The research questions investigated in this paper are as follows: 
+RQ1: What RE practices that facilitate alignment between RE and V\&V?
+RQ 1.1: In which requirement phases does the identified RE practices are applied?
+
+\todo[inline]{WNUK: maybe focus only on RQ2 and summarize shortly RQ1 }
+RQ2: What RE process factors influence the alignment between RE and V\&V?
+RQ3: What organizational factors influence the alignment between RE and V\&V?
+RQ4: What are the challenges faced during the alignment between RE and V\&V?
+RQ4.1: What challenges can be addressed while applying RE practices?
+
+\section{Background and Related Work}\label{BackgroundRW}
+Barmi et al. identified that the majority of the research in RE and V&V alignment is on model-based testing (MBT) including various formal methods for specifying requirements and test case generation [9]. They also identified only three empirical studies in their mapping study [9]. Bjarnason et al.  \cite{sabaliauskaite2010challenges} conducted a multi case study in six companies to investigate the challenges of RE and V\&V alignment and identified 27 alignment practices. They have synthesized the results into a conceptual model based on a V-model that shows artefacts, processes and relationship between artefacts of different abstraction levels \cite{bjarnason2014challenges}.
+In another study Bjarnason et al. [34],  proposed a model for alignment of RE and V&V that involves early V&V to reduce the cost and improve the quality of the requirements. Unterkalmsteiner et al. [17] proposed a definition for alignment between requirement engineering and software testing (REST).They also proposed a taxonomy that describe the methods linking RE and testing areas and processes to determine the alignment along with the emphasis of traceability during RE and V\&V alignment.
+
+
+Damian et al. [13] stressed that increased testing involvement during RE activities helps the alignment.  In particular, they have found the sophisticated change control process brought the functional organization and organizational responsibility together through horizontal (designers, developers, testers and documenters) and vertical (team leads, engineers, executive management and technical managers) alignment of these roles[13]. Furthermore, Damian et al.[14] suggested that high relations between RE activities and V\&V can accelerate waste reduction, over scoping and requirements creep, and also improve test coverage and risk management, which resulted in increasing the quality of the product and increased productivity. Kukkanen et al.[10] investigated the benefits of jointly developing the RE and testing in the safety critical domain [10]. They also reported that integration of requirements and testing processes by clearly mentioning requirements and testing roles, improves by connecting people and processes from RE and testing, and this can also improved by applying good practices that support connection between RE and testing[10]. 
+
+Kukkanen et al. listed [10] change management, traceability, requirements reviews, clear roles and responsobilities as the RE and V&V alignment practices. Moreover, linking functional requirements and software verification provides benefits for requirement management and software implementation quality and strengthens the aligning requirements and software verification [15]. Other alignment practices include early tester participation, considering feature request from testers and improved interaction and communication of different roles [11].
+
+Lower testing and maintaining costs, increased test coverage and quality in the final output of the product can be supported by establishing traceability between requirements and other development artefacts[10][11][12]. Challenges such as communication gaps, lack of training, volatility of the traced artefacts etc. related to traceability are reported  and empirically investigated from many years  \cite{bjarnason2014challenges}[19]. Unterkalmsteiner et al.[17] mentioned that high quality traces are expensive, but their contribution can improve the alignment and it is not only solution to achieve the alignment.
+
+Many formal models and languages were suggested for representing requirements for model based testing (MBT) [22]. MBT struggles[23] with practical applicability of traceability in industrial development[24][25][26]. Some promising work is reported, e.g. Nebut et al. [24] and Hasling et al[27] reported that applying MBT by generating test cases from UML description of requirements benefits in increasing test coverage and testing productivity. The conversion of technical requirements into a formal model could encounter some of the difficulties such as requiring special competence to produce requirements etc. [24]. Therefore, Yue et al. stated that additional research is needed before proposing a practical solution to this conversion of technical requirements[25]. 
+
+Automated test case generation of test cases generation has the potential of linking requirements without any creation or maintenance  of manual traces  \cite{bjarnason2014challenges}. However, the value of the traces may vary by depending on the generated test cases and the abstraction level of the formal model  \cite{sabaliauskaite2010challenges}. While applying MBT, error causes in these formal models are the main hindrance to fully trust them [27][28]. As an alternative to formal models scenario-based models are defined such as user stories, use cases [29] [30] to cover requirements. In scenario based models acceptance test cases are used to document the detailed requirements at a high level and this approach is often applied in agile development by Cao and Ramesh [31]. In  another study Melnik et al. [32] found that to implement and feather testing mentality, executable acceptance test cases can be used as detailed requirements.
+
+Process factors, contextual factors and organizational factors play an important role in the alignment. Bjarnason et al. [33] discussed the consideration of process factors i.e. source of requirements, requirements in typical project. In a similar study to this, Kukkanen et al.[10] stressed to know the importance of process factors which may shorten the development time and improve the quality. Sabaliauskaite et al.  \cite{sabaliauskaite2010challenges} discussed the influence of organizational factors i.e. organizational structure, gaps in communication across different organizational units, however without details .  Bjarnason et al. [34] discussed influence of organizational factors during a study to present an initial version of a theory based on the GAP model. During this study they have discussed the organizational factors that influence the alignment i.e. size of an organization, domain and range of an organization. Whereas, Wnuk et al. [1] discussed the impact of enabling factors such as focus on informal and direct communication, open culture for the success of a software project.
+
+\section{Research Methodology}\label{RM}
+A systematic literature review research method was selected based on the guidelines for snowballing suggested by Wohlin et al. [35]. The reason for not choosing the database search, e.g. SLR [Kitchenhamn REF add] is because it is quite difficult to formulate a precise search string due to different terminology that increases the number of irrelevant papers in the search [35] [36] [37]. Moreover, snowballing can also be used as a reference for identification of additional list of studies through citations and references of selected studies [35] or for extending previous systematic literature reviews, e.g. Bjarnason et al. [33] or Barmi et al. [9].
+
+\subsection{Start set selection }
+We selected the “Engineering village” database for start set identification. Google scholar was excluded as it lacks in providing certainty in terms of scholarly value and currency of some records, lacks in including the scope of its coverage [38]. As suggested by Kinsely et al.,  Engineering Village is an appropriate place to initiate an engineering search when compared to other databases [38]. 
+
+The search string used for start set identification was iteratively developed with intensive discussions between the authors. Some categories were derived from the research questions and based on the study of initial set of papers.  These categories focus on Non-functional requirements (F1), Requirements (F2), verification and validation (F3) and alignment(F4). Search string formulated by using these categories is “F1 OR F2 AND F3 AND F4”. 
+F1: "nonfunctional requirement" OR "nonfunctional requirements" OR "non functional requirement" OR "non functional requirements" OR "non functional software requirement" OR "non functional software requirements" OR "nonbehavioral requirement" OR "nonbehavioral requirements" OR "non behavioral requirement" OR "non behavioral requirements" OR "non behavioural requirement" OR "non behavioural requirements" OR "nonfunctional property" OR "nonfunctional properties" OR "non functional property" OR "non functional properties" OR "quality attribute" OR "quality attributes" OR "quality requirement" OR "quality requirements" OR "quality attribute requirement"
+F2: “Requirements” 
+F3: "test" OR "tests" OR "testing" OR "verify" OR "verifying" OR "verification" OR "validate" OR "validation"
+F4: "align" OR "aligning" OR "alignment" OR "trace" OR "tracing" OR "traceable" OR
+
+The above search string covers the entire alignment between RE and V&V unlike just RE practices, RE process factors, organizational factors and challenges faced during alignment between RE and V&V. The idea here was to capture the verification and validation practices along with RE practices that are followed during the RE and V&V alignment. We decided to look for papers from 2001 or younger following the recommendation of Barmi et al. [9] who mentioned that research on alignment between RE and testing was started from the end of year 2001.
+Start set was derived by:
+
+1.	Extraction of studies from database using a search string: 4787 papers were identified.
+2.	By considering the papers between 2002 to 2015 [9], we identified 3202 paper candidates.
+3.	By screening considering the inclusion and exclusion criteria, we ended up in with 690 potential papers.
+4.	From these 690 results by examining the abstract and further screening 658 papers were not found relevant and therefore excluded. The remaining 32 candidates were considered as a tentative start set.
+5.	After performing full text read, we included 10 papers from the 32 candidates. We investigated the diversity of the 10 paper candidates with an aim for achieving the possibility of more coverage of relevant studies [35]. 
+6.	Phase 2: Finally, from these 32 results 10 results were considered as a start set based on number of relevant citations and references. The selection of start set also carried out by going through the title, looking at the relevant study and then abstract of each candidate. Finally, full text of all these 10 results is read before considering for start set. 
+
+
+The inclusion criteria included:
+IC1: Studies must be available in full text.
+IC2: Studies must be available in English language.
+IC3: Studies should be peer reviewed.
+IC4: Studies that have any type of alignment related to requirements and   V&V should be included.
+IC5: Studies related to formal methods, software engineering techniques and Diagnostic, testing and debugging method classification codes are included.
+IC6: Conferences, journals, articles that are published in between 2002-2015 years are included [9].
+IC7: Factors influencing the alignment study
+IC8: The study that reports the benefits, challenges, disadvantages, practices of alignment study.
+
+Data extraction and synthesis. Data extraction properties were created in spreadsheets and also mapped with research questions before finalization. The data extraction properties are outlined in Table 2. Rigor and relevance criteria were used to check the trustworthiness of each paper, according to the checklist provided by Ivarsson et.al [40], see Aappendix D.. This helps in identifying weather the results are suitable for the identification of practices, challenges and influencing factors in alignment study.
+
+General information (Authors, Title, Year of publication, Abstract )
+Study type (Proposal of solution Evaluation research, Validation research Philosophical papers, Opinion papers
+Personal experience papers)
+
+Research method used (Case study,  Experiment,  Survey ,  Framework )
+
+Research problem (i.	Does the study specify the RE practices during alignment between RE and V&V?
+ii.	Does the study specify the specific RE process factors?
+iii.	Does the study specify the specific organizational factors?
+iv.	Does the study specify the challenges that are faced during the alignment between RE and V&V?
+)
+
+Outcomes (i.	Practices during alignment between RE and V&V
+ii.	Influence of factors
+iii.	Challenges
+)
+
+\subsection{Validity}
+
+We used narrative analysis for analyzing the results obtained through literature, narrative. Narrative analysis is defined as “an approach to the systematic review and synthesis of findings from multiple studies that relies primarily on the use of words and text to summarize and explain findings of the synthesis” [39]. This approach helps in process of explaining the data retrieved from the identified studies[39] in a ‘tell the story’ way. This also used to synthesis the data that can be used in the identified studies, which were focused on a wide range of research questions, not only studies related to the effectiveness of a particular research area [39].
+
+
+
+
+\section*{ACKNOWLEDGMENT}
+This work has been supported by the Professional Licentiate of Engineering (PLEng) Pilot Run 2014-2018 from The Knowledge Foundation in Sweden in cooperation with Ericsson AB. This work is also supported by the ORION project (reference number 20140218) from The Knowledge Foundation in Sweden.
+
+\section*{REFERENCES}
+
+\bibliographystyle{plain}
+\bibliography{main}g
+
+\end{document}
