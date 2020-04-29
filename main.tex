@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{todonotes}
+\usepackage{comment}
 \title{Process and Organizational Factors that Impact Requirements Engineering and Verification and Validation Alignment}
 \author{Krzysztof Wnuk, Srinivasu Akkineni}
 \date{April 2020}
@@ -17,9 +18,9 @@ Where is S8 it is the delicate balance paper by Wnuk
 Where is S10 in the paper unterkalsteiner taxonomy 
 
 }
-Requirements Engineering (RE) and Verification and Validation (V\&V) are treated inseparable and should be activated as early as possible and ensure meeting customer expectations \cite{wnuk2014delicate,bjarnason2014challenges}. Weak co-ordination between RE and V\&V can lead to ineffective development, quality problems, project delays,  additional cost and effort required for removing defects, non-verifiable requirements, lower product quality, uncertain test coverage due to lack of established channels \cite{bjarnason2014challenges,graham2002requirements,sabaliauskaite2010challenges,jones2009enabling}. 
+Requirements Engineering (RE) and Verification and Validation (V\&V) are treated inseparable and should be activated as early as possible and ensure meeting customer expectations \cite{wnuk2014delicateS8,bjarnason2014challengesS9}. Weak co-ordination between RE and V\&V can lead to ineffective development, quality problems, project delays,  additional cost and effort required for removing defects, non-verifiable requirements, lower product quality, uncertain test coverage due to lack of established channels \cite{bjarnason2014challengesS9,graham2002requirementsS6,sabaliauskaite2010challengesS3,jones2009enabling}. 
 
-There is a substantial body of knowledge in both RE and V\&V research fields. Despite highlighting RE and V\&V alignment as a focus area for further research in RE  \cite{sabaliauskaite2010challenges} \cite{bjarnason2014challenges} \cite{cheng2007research} and calling for investigating and exploring which additional factors may influence the balance between RE and V\&V, only a handful of studies discussed the alignment between these two areas \cite{barmi2011alignment}, e.g. how to improve requirements and testing processes \cite{kukkanen2009applying}, link requirements and testing \cite{barmi2011alignment,uusitalo2008linking,watkins1994and}, define alignment practices  \cite{bjarnason2014challenges},  define roles that support the alignment  \cite{bjarnason2014challenges} \cite{sabaliauskaite2010challenges}.
+There is a substantial body of knowledge in both RE and V\&V research fields. Despite highlighting RE and V\&V alignment as a focus area for further research in RE  \cite{sabaliauskaite2010challengesS3} \cite{bjarnason2014challengesS9} \cite{cheng2007research} and calling for investigating and exploring which additional factors may influence the balance between RE and V\&V, only a handful of studies discussed the alignment between these two areas \cite{barmi2011alignmentS1}, e.g. how to improve requirements and testing processes \cite{kukkanen2009applying}, link requirements and testing \cite{barmi2011alignmentS1,uusitalo2008linkingS5,watkins1994and}, define alignment practices  \cite{bjarnason2014challengesS9},  define roles that support the alignment  \cite{bjarnason2014challengesS9} \cite{sabaliauskaite2010challengesS3}.
 
 Therefore, this study occupies this gap by providing a systematic and comprehensive summarize of the research area of process and organizational aspects that impact RE and V\&V alignment. The research questions investigated in this paper are as follows: 
 
@@ -34,26 +35,26 @@ Therefore, this study occupies this gap by providing a systematic and comprehens
 
 
 \section{Background and Related Work}\label{BackgroundRW}
-Barmi et al. identified that the majority of the research in RE and V&V alignment is on model-based testing (MBT) including various formal methods for specifying requirements and test case generation. They also identified only three empirical studies in their mapping study \cite{barmi2011alignment}. Bjarnason et al. conducted a multi case study in six companies to investigate the challenges of RE and V\&V alignment and identified 27 alignment practices. They have synthesized the results into a conceptual model based on a V-model that shows artefacts, processes and relationship between artefacts of different abstraction levels \cite{bjarnason2014challenges,sabaliauskaite2010challenges}.
-In another study Bjarnason et al.,  proposed a model for alignment of RE and V&V that involves early V&V to reduce the cost and improve the quality of the requirements \cite{bjarnason2014alignment}. Unterkalmsteiner et al. proposed a definition for alignment between requirement engineering and software testing (REST).They also proposed a taxonomy that describe the methods linking RE and testing areas and processes to determine the alignment along with the emphasis of traceability during RE and V\&V alignment  \cite{unterkalmsteiner2014taxonomy}.
+Barmi et al. identified that the majority of the research in RE and V&V alignment is on model-based testing (MBT) including various formal methods for specifying requirements and test case generation. They also identified only three empirical studies in their mapping study \cite{barmi2011alignmentS1}. Bjarnason et al. conducted a multi case study in six companies to investigate the challenges of RE and V\&V alignment and identified 27 alignment practices. They have synthesized the results into a conceptual model based on a V-model that shows artefacts, processes and relationship between artefacts of different abstraction levels \cite{bjarnason2014challengesS9,sabaliauskaite2010challengesS3}.
+In another study Bjarnason et al.,  proposed a model for alignment of RE and V&V that involves early V&V to reduce the cost and improve the quality of the requirements \cite{bjarnason2014alignment}. Unterkalmsteiner et al. proposed a definition for alignment between requirement engineering and software testing (REST).They also proposed a taxonomy that describe the methods linking RE and testing areas and processes to determine the alignment along with the emphasis of traceability during RE and V\&V alignment  \cite{unterkalmsteiner2014taxonomyS10}.
 
 
 Damian et al. stressed that increased testing involvement during RE activities helps the alignment.  In particular, they have found the sophisticated change control process brought the functional organization and organizational responsibility together through horizontal (designers, developers, testers and documenters) and vertical (team leads, engineers, executive management and technical managers) alignment of these roles \cite{damian2005requirements}. Furthermore, Damian et al. suggested that high relations between RE activities and V\&V can accelerate waste reduction, over scoping and requirements creep, and also improve test coverage and risk management, which resulted in increasing the quality of the product and increased productivity \cite{damian2006empirical}. 
 
-Kukkanen et al.investigated the benefits of jointly developing the RE and testing in the safety critical domain \cite{kukkanen2009applying}. They also reported that integration of requirements and testing processes by clearly mentioning requirements and testing roles, improves by connecting people and processes from RE and testing, and this can also improved by applying good practices that support connection between RE and testing. Kukkanen et al. listed change management, traceability, requirements reviews, clear roles and responsobilities as the RE and V\&V alignment practices. Moreover, linking functional requirements and software verification provides benefits for requirement management and software implementation quality and strengthens the aligning requirements and software verification \cite{post2009linking}. Other alignment practices include early tester participation, considering feature request from testers and improved interaction and communication of different roles \cite{uusitalo2008linking}.
+Kukkanen et al.investigated the benefits of jointly developing the RE and testing in the safety critical domain \cite{kukkanen2009applying}. They also reported that integration of requirements and testing processes by clearly mentioning requirements and testing roles, improves by connecting people and processes from RE and testing, and this can also improved by applying good practices that support connection between RE and testing. Kukkanen et al. listed change management, traceability, requirements reviews, clear roles and responsobilities as the RE and V\&V alignment practices. Moreover, linking functional requirements and software verification provides benefits for requirement management and software implementation quality and strengthens the aligning requirements and software verification \cite{post2009linkingS4}. Other alignment practices include early tester participation, considering feature request from testers and improved interaction and communication of different roles \cite{uusitalo2008linkingS5}.
 
-Lower testing and maintaining costs, increased test coverage and quality in the final output of the product can be supported by establishing traceability between requirements and other development artefacts \cite{kukkanen2009applying,uusitalo2008linking,watkins1994and}. Challenges such as communication gaps, lack of training, volatility of the traced artefacts etc. related to traceability are reported  and empirically investigated from many years  \cite{bjarnason2014challenges,cleland2003event}. Unterkalmsteiner et al. mentioned that high quality traces are expensive, but their contribution can improve the alignment and it is not only solution to achieve the alignment \cite{unterkalmsteiner2014taxonomy}.
+Lower testing and maintaining costs, increased test coverage and quality in the final output of the product can be supported by establishing traceability between requirements and other development artefacts \cite{kukkanen2009applying,uusitalo2008linkingS5,watkins1994and}. Challenges such as communication gaps, lack of training, volatility of the traced artefacts etc. related to traceability are reported  and empirically investigated from many years  \cite{bjarnason2014challengesS9,cleland2003event}. Unterkalmsteiner et al. mentioned that high quality traces are expensive, but their contribution can improve the alignment and it is not only solution to achieve the alignment \cite{unterkalmsteiner2014taxonomyS10}.
 
 Many formal models and languages were suggested for representing requirements for model based testing (MBT) \cite{dias2007survey}. MBT struggles with practical applicability of traceability in industrial development \cite{nebut2006automatic,yue2011systematic,aichernig2014integration}. Some promising work is reported, e.g. Nebut et al. \cite{nebut2006automatic} and Hasling et al. \cite{hasling2008model} reported that applying MBT by generating test cases from UML description of requirements benefits in increasing test coverage and testing productivity. The conversion of technical requirements into a formal model could encounter some of the difficulties such as requiring special competence to produce requirements etc. \cite{nebut2006automatic}. Therefore, Yue et al. stated that additional research is needed before proposing a practical solution to this conversion of technical requirements \cite{yue2011systematic}. 
 
-Automated test case generation of test cases generation has the potential of linking requirements without any creation or maintenance  of manual traces  \cite{bjarnason2014challenges}. However, the value of the traces may vary by depending on the generated test cases and the abstraction level of the formal model  \cite{sabaliauskaite2010challenges}. While applying MBT, error causes in these formal models are the main hindrance to fully trust them \cite{hasling2008model,ferguson2006empirical}. As an alternative to formal models scenario-based models are defined such as user stories, use cases \cite{regnell2000towards,regnell1998combining}  to cover requirements. In scenario based models acceptance test cases are used to document the detailed requirements at a high level and this approach is often applied in agile development by Cao and Ramesh \cite{cao2008agile}. In  another study Melnik et al. found that to implement and feather testing mentality, executable acceptance test cases can be used as detailed requirements \cite{melnik2006executable}.
+Automated test case generation of test cases generation has the potential of linking requirements without any creation or maintenance  of manual traces  \cite{bjarnason2014challengesS9}. However, the value of the traces may vary by depending on the generated test cases and the abstraction level of the formal model  \cite{sabaliauskaite2010challengesS3}. While applying MBT, error causes in these formal models are the main hindrance to fully trust them \cite{hasling2008model,ferguson2006empirical}. As an alternative to formal models scenario-based models are defined such as user stories, use cases \cite{regnell2000towards,regnell1998combining}  to cover requirements. In scenario based models acceptance test cases are used to document the detailed requirements at a high level and this approach is often applied in agile development by Cao and Ramesh \cite{cao2008agile}. In  another study Melnik et al. found that to implement and feather testing mentality, executable acceptance test cases can be used as detailed requirements \cite{melnik2006executable}.
 
-Process factors, contextual factors and organizational factors play an important role in the alignment. Bjarnason et al. discussed the consideration of process factors i.e. source of requirements, requirements in typical project \cite{bjarnason2015industrial}. In a similar study to this, Kukkanen et al. stressed to know the importance of process factors which may shorten the development time and improve the quality \cite{kukkanen2009applying}. Sabaliauskaite et al.  discussed the influence of organizational factors i.e. organizational structure, gaps in communication across different organizational units, however without details \cite{sabaliauskaite2010challenges}.  Bjarnason et al. discussed influence of organizational factors during a study to present an initial version of a theory based on the GAP model \cite{bjarnason2013distances}. During this study they have discussed the organizational factors that influence the alignment i.e. size of an organization, domain and range of an organization. Whereas, Wnuk et al.  discussed the impact of enabling factors such as focus on informal and direct communication, open culture for the success of a software project \cite{wnuk2014delicate}.
+Process factors, contextual factors and organizational factors play an important role in the alignment. Bjarnason et al. discussed the consideration of process factors i.e. source of requirements, requirements in typical project \cite{bjarnason2015industrialS14}. In a similar study to this, Kukkanen et al. stressed to know the importance of process factors which may shorten the development time and improve the quality \cite{kukkanen2009applyingS2}. Sabaliauskaite et al.  discussed the influence of organizational factors i.e. organizational structure, gaps in communication across different organizational units, however without details \cite{sabaliauskaite2010challengesS3}.  Bjarnason et al. discussed influence of organizational factors during a study to present an initial version of a theory based on the GAP model \cite{bjarnason2013distances}. During this study they have discussed the organizational factors that influence the alignment i.e. size of an organization, domain and range of an organization. Whereas, Wnuk et al.  discussed the impact of enabling factors such as focus on informal and direct communication, open culture for the success of a software project \cite{wnuk2014delicateS8}.
 
 \section{Research Methodology}\label{RM}
 
 
-We have used a snowballing method for searching the relevant literature \cite{wohlin2014guidelines}. The reason for not choosing the database search, e.g. SLR is because it is quite difficult to formulate a precise search string due to different terminology that increases the number of irrelevant papers in the search \cite{wohlin2014guidelines,kitchenham2009systematic,kitchenham2010systematic}. Moreover, snowballing can also be used as a reference for identification of additional list of studies through citations and references of selected studies \cite{wohlin2014guidelines} or for extending previous systematic literature reviews, e.g. Bjarnason et al. \cite{bjarnason2013distances} or Barmi et al. \cite{barmi2011alignment}.
+We have used a snowballing method for searching the relevant literature \cite{wohlin2014guidelines}. The reason for not choosing the database search, e.g. SLR is because it is quite difficult to formulate a precise search string due to different terminology that increases the number of irrelevant papers in the search \cite{wohlin2014guidelines,kitchenham2009systematic,kitchenham2010systematic}. Moreover, snowballing can also be used as a reference for identification of additional list of studies through citations and references of selected studies \cite{wohlin2014guidelines} or for extending previous systematic literature reviews, e.g. Bjarnason et al. \cite{bjarnason2013distances} or Barmi et al. \cite{barmi2011alignmentS1}.
 
 \subsection{Start set selection }
 We selected the “Engineering village” database for start set identification. Google scholar was excluded as it lacks in providing certainty in terms of scholarly value and currency of some records, lacks in including the scope of its coverage. As suggested by Kinsely et al.,  Engineering Village is an appropriate place to initiate an engineering search when compared to other databases \cite{knisely2014engineering}. 
@@ -70,7 +71,7 @@ The search string used for start set identification was iteratively developed wi
 
 
 
-The above search string covers the entire alignment between RE and V\&V unlike just RE practices, RE process factors, organizational factors and challenges faced during alignment between RE and V\&V. The idea here was to capture the verification and validation practices along with RE practices that are followed during the RE and V\&V alignment. We decided to look for papers from 2001 or younger following the recommendation of Barmi et al. who mentioned that research on alignment between RE and testing was started from the end of year 2001 \cite{barmi2011alignment}.
+The above search string covers the entire alignment between RE and V\&V unlike just RE practices, RE process factors, organizational factors and challenges faced during alignment between RE and V\&V. The idea here was to capture the verification and validation practices along with RE practices that are followed during the RE and V\&V alignment. We decided to look for papers from 2001 or younger following the recommendation of Barmi et al. who mentioned that research on alignment between RE and testing was started from the end of year 2001 \cite{barmi2011alignmentS1}.
 
 Start set was derived by:
 \begin{itemize}
@@ -118,12 +119,12 @@ Rigor and relevance criteria were used to check the trustworthiness of each pape
 The data extraction properties were reviewed by the both authors. Moreover, quality of the identified studies is an important objective since this research focuses on factors and practices related to industry. Therefore, quality assessment is carried out by applying the rigor and relevance assessment criteria suggested by Ivarsson and Gorschek \cite{ivarsson2011method}. 
 
 \section{Results and Analysis}\label{ResultsAndAnalysis}
-10 papers were included into the start set, denoted as S1 \cite{barmi2011alignment}, S2 \cite{kukkanen2009applying}, S3 \cite{sabaliauskaite2010challenges}, S4 \cite{post2009linking}, S5 \cite{uusitalo2008linking}, S6 \cite{graham2002requirements}, S7 \cite{larsson2014revisiting}, S8 \cite{wnuk2014delicate}, S9 \cite{bjarnason2014challenges} and S10 \cite{unterkalmsteiner2014taxonomy}. 
+10 papers were included into the start set, denoted as S1 \cite{barmi2011alignmentS1}, S2 \cite{kukkanen2009applyingS2}, S3 \cite{sabaliauskaite2010challengesS3}, S4 \cite{post2009linkingS4}, S5 \cite{uusitalo2008linkingS5}, S6 \cite{graham2002requirementsS6}, S7 \cite{larsson2014revisitingS7}, S8 \cite{wnuk2014delicateS8}, S9 \cite{bjarnason2014challengesS9} and S10 \cite{unterkalmsteiner2014taxonomyS10}. 
 \todo[inline]{WNUK: start here with editing 
 CHECK THe citations of papers S1 to S20 from 2016 to 2019 and update the number of citations screened in the table below, check if there is any new paper or not, 
 
 Also list the start set S1, S2 .. with the references}
-
+\begin{comment}
 \todo[inline]{WNUK: 
 
 From 2016 S1 got 33 new citations and we have papers S21, S22, S23, S24  
@@ -137,12 +138,14 @@ S23 - A Qualitative Study on using GuideGen to Keep Requirements and Acceptance 
 S24 - What Do We Know about Alignment of Requirements Engineering and Software Testing?
 
 From S2 we got additional 14 citations  since 2016 
+
 S25 - Challenges of Aligning Requirements Engineering and System Testing in Large-Scale Agile: A Multiple Case Study
 
 S26 - An Exploratory Study on Handling Requirements and Acceptance Test Documentation in Industry
 
 
 Paper S3 had 16 new citations since 2016 
+
 S27 - A multi-case study of agile requirements engineering and the use of test cases as requirements
 
 Paper S4 has 18 new citations since 2016 but only duplicates 
@@ -172,27 +175,33 @@ S33 - Alignment of Requirements and Testing in Agile: An Industrial Experience
 Paper S10 has 31 new citations since 2016 but just duplicates of already identified papers
 
 }
-
+\end{comment}
 \begin{table}[]
     
     \hline
-    \begin{tabular}{|p{1.5cm}|p{2.5cm}|p{2.5cm}|p{2cm}|p{2cm}|}
+    \begin{tabular}{|p{1.3cm}|p{2.2cm}|p{2.5cm}|p{2.5cm}|p{2.2cm}|}
    
-         &  Backward (evaluated and included studies) & Backward removed (what and why) & Forward (evaluated and included) & Forward removed (what and why) \\
+         &  Backward  & Backward removed  & Forward  & Forward removed  \\
           \hline
-       First iteration  &  280:4 \newline (S11\cite{metsa2007testing}, S12\cite{bjarnason2015industrial}, S15\cite{ferguson2006empirical}, S16\cite{bjarnason2014alignment}) & 56-Pub. year, 22-Pub. type, 153-Title
-53-Abstract and full text & 237:2 \newline (S13\cite{aichernig2014integration}, S14\cite{bjarnason2015industrial}) & 101-Title 29-Language 38- Duplicates 66- Full text and abstract \\
+       First iteration  &  280 Evaluated \newline 4 Included \newline S11\cite{metsa2007testing}, S12\cite{bjarnason2015industrialS14}, \newline S15\cite{ferguson2006empirical}, S16\cite{bjarnason2014alignment} & 56-Pub. year, \newline 22-Pub. type, \newline 153-Title, \newline
+53 - Abstract and full text read & 444 evaluated \newline 15 Included \newline S13\cite{aichernig2014integration},  S14 \cite{bjarnason2015industrialS14},  \newline 
+S20\cite{ricca2007talkingS20},  S21\cite{bjarnason2019improvingS21}, \newline S22\cite{hotomski2019guidegenS22},  S23\cite{hotomski2018qualitativeS23}, \newline S24\cite{karhapaa2017weS24},  S25\cite{de2017challengesS25}, \newline
+S26\cite{hotomski2016exploratoryS26}, S27\cite{bjarnason2016multiS27},   \newline S28\cite{coutinho2019requirementsS28}, S29\cite{hotomski2017aligningS29}, \newline 
+S30\cite{hotomski2018keepingS30}, S31\cite{jorge2018integratingS31},  \newline
+S32\cite{beer2018measuringS32}, S33\cite{bucaioni2018alignmentS33}  & 241- Title \newline  36- Language \newline  28- Duplicates \newline  123- Abstract and full text read \\
 \hline
-Second Iteration & 124: 2 \newline (S17 \cite{melnik2006executable}, S18 \cite{bjarnason2013distances}) & 33- Publication Year 11- Duplicates 9- Language 23- Title 2-Full text  and abstract & 39:0 & 9- Language 23- Title 4- Duplicates 2 - Full text and abstract \\
+Second Iteration & 535 evaluated \newline 3 included \newline S17 \cite{melnik2006executable}, \newline S18 \cite{bjarnason2013distances} \newline S34 \cite{UnterAssessingS34}
+& 33 Publ. year \newline 11 Duplicates \newline 9 Language \newline 123 Title \newline 2 Abstract and full text read & 288 Evaluated \newline 0 included  & 9 Language \newline 23 Title \newline 4 Duplicates\newline  2 Abstract and full text read \\
 \hline
-Third iteration & 69:0 & 17- Publication Year 37- Title 2- Duplicates 13- Full text and abstract & 44: \newline 2 (S19 \cite{melnik2004suitability}, S20) & 26- Title \newline 6- Language \newline 4-Duplicates \newline 8-Full text and abstract \\
-Fourth Iteration & 20:0 & 12- Publication year 6- Title and abstract 2- Full text & 43:0 & 26- Title 4- Duplicates 6- Language 6-Full text and abstract \\
+Third iteration & 124 Evaluated \newline 0 Included & 37 Publ. Year \newline 57 Title \newline 7 Duplicates \newline 33 Abstract and full text read \newline & 77 Evaluated \newline 2 Included \newline S19 \cite{melnik2004suitability}, S20 \cite{RiccaS20} & 49 Title \newline 6 Language \newline 4 Duplicates \newline 8 Abstract and full text read \\
+\hline
+Fourth Iteration & 20 Evaluated \newline 0 Included  & 12 Publ. year \newline 6 Title \newline 2  Abstract and full text reading & 43 Evaluated \newline 0 included & 26 Title \newline 4- Duplicates \newline 6- Language \newline 6- Abstract and full text read \\
 \hline
     \end{tabular}
     \caption{Caption}
     \label{tab:my_label}
 \end{table}
-
+\begin{comment}
 \todo[inline]{WNUK: Checking again first iteration papers fro, S11, S12, S13, S14, S15 and S16
 
 S11 has 2 more citations since 2016 no new
@@ -252,73 +261,145 @@ S34 (reference of S29) - M. Unterkalmsteiner et al. “Assessing requirements en
 
 }
 
-
+\end{comment}
 
 \subsection{Categorization based on the study type and research method}\label{ResultsCat}
-
-The results were categorized into the two methodological dimensions, based on the suggestions given by Runeson et al.[42] and Wierlinga et al. [43], namely methodology (Survey, case study, tool proposal and framework) and type of study (proposal, evaluative, validation and solution). Figure 2 depicts the categorization of these two dimensions. 
-
-12 studies (S3, S4, S8, S9, S10, \cite{lobo2005local}, \cite{aichernig2014integration}, \cite{ferguson2006empirical}, \cite{bjarnason2014alignment}, \cite{melnik2006executable}, \cite{bjarnason2013distances}, \cite{melnik2004suitability}) were considered as evolution research, two studies were categorized as solution studies (\cite{ricca2007talking}, S2) and three studies proposed a framework for aligning test cases with requirements (S7, \cite{metsa2007testing}, \cite{bjarnason2015industrial}). We considered studies S2 and \cite{ferguson2006empirical} as secondary studies and study S6 is an opinion paper.  
+Table X presents the results of the categrization
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+         Paper   & Research method \cite{runeson2012case} & Study Type \cite{wieringa2006requirements} & Rigor \cite{ivarsson2011method} & Relevance \cite{ivarsson2011method} \\ \hline \hline
+        S1     & Literature Review & ---   & ---   & ---  \\
+        \hline
+        S2     & Case Study & Evaluation Research   & 1 & 3 \\
+        \hline
+        S3     & Case Study & Evaluation Research & 3 & 3 \\
+        \hline
+        S4     & Case Study & Solution Proposal  & 2 & 3  \\
+        \hline
+        S5     & Case Study  & Evaluation Research & 1 & 2 \\
+        \hline
+        S6     & Case Study & Opinion Paper & 1 & 2  \\
+        \hline
+        S7     & Case Study & Personal Experience & 1 & 2  \\
+        \hline
+        S8     & Case Study & Opinion Paper & 1 & 2 \\
+        \hline
+        S9     & Case Study & Evaluation Research & 3 & 3 \\
+        \hline
+        S10     & Case Study & Solution Proposal & 3 &  3 \\
+        \hline
+        S11     &  Case Study & Opinion Paper & 1 & 2  \\
+        \hline
+        S12     & Case Study & Solution Proposal & 1 & 2 \\
+        \hline
+        S13     & Case Study & Solution Proposal & 2 & 2 \\
+        \hline
+        S14     & Case Study & Evaluation Research & 1 & 2 \\
+        \hline
+        S15     & Case Study & Evaluation Research & 1 & 2 \\
+        \hline
+        S16     & Case Study & Solution Proposal & 2 & 2 \\
+        \hline
+        S17     & Experiment & Evaluation Research & 2 & 2 \\
+        \hline
+        S18     & Literature Review & --- & --- &  --- \\
+        \hline
+        S19     & Experiment & Solution Proposal & 2 & 2 \\
+        \hline
+        S20     & Experiment & Solution Proposal & 2 & 2 \\
+        \hline
+        S21     & Case Study & Solution Proposal & 2 & 3 \\
+        \hline
+        S22     & Case Study & Solution Proposal & 2 & 3 \\
+        \hline
+        S23     & Case Study & Evaluation Research & 2 & 2 \\
+        \hline
+        S24     & Literature Review & --- & --- & --- \\
+        \hline
+        S25     & Case Study & Solution Proposal & 1 & 3 \\
+        \hline
+        S26     & Case Study & Evaluation Research & 3 & 3 \\
+        \hline
+        S27     & Case Study & Evaluation Research & 3 & 3 \\
+        \hline
+        S28     & Literature Review & --- & --- & --- \\
+        \hline
+        S29     & Case Study & Solution Proposal & 1 & 2 \\
+        \hline
+        S30     & Case Study & Solution Proposal & 2 & 3 \\
+        \hline
+        S31     & Case Study & Solution Proposal & 2 & 2 \\
+        \hline
+        S32     & Case Study & Evaluation Research & 1 & 2 \\
+        \hline
+        S33     & Case Study & Personal Experience & 1 & 2 \\
+        \hline
+        S34     & Case Study & Solution Proposal & 3 & 3 \\
+        \hline
+       
+       
+       
+    \end{tabular}
+    \caption{The results were categorized into the two methodological dimensions, based on the suggestions given by Runeson et al.\cite{runeson2012case} and Wierlinga et al. \cite{wieringa2006requirements}.}
+    \label{tab:TypeRigorRelevance}
+\end{table}
  
-The majority of the identified studies rapport evaluation research should enable finding the practices that improve RE and V&V alignment. However, the identified papers seem to primarily focus on descriptive studies that describe the RE and V&V misalignment cases rather than how to improve the alignment [11].
-Evaluations using case study research methodology dominates among the identified papers. Three studies were classified as case study-solutions, one paper was classified as validation research and one as a proposal.  Two out of four (\cite{ferguson2006empirical}, S17, \cite{melnik2004suitability}, S20 \cite{ricca2007talking}) studies reported evolutions using experiments performed with students as subjects. It remains to be determined if students are representative population for studying alignment issues. On the other hand, four studies performed non-experimental evaluations (S2, S5, S9, \cite{bjarnason2014alignment}) and suggested the practices that strengthen RE and V&V alignment.
+
+12 studies (S3, S4, S8, S9, S10, \cite{lobo2005local}, \cite{aichernig2014integration}, \cite{ferguson2006empirical}, \cite{bjarnason2014alignment}, \cite{melnik2006executable}, \cite{bjarnason2013distances}, \cite{melnik2004suitability}) were considered as evolution research, two studies were categorized as solution studies (\cite{ricca2007talkingS20}, S2) and three studies proposed a framework for aligning test cases with requirements (S7, \cite{metsa2007testing}, \cite{bjarnason2015industrialS14}). We considered studies S2 and \cite{ferguson2006empirical} as secondary studies and study S6 is an opinion paper.  
+ 
+The majority of the identified studies rapport evaluation research should enable finding the practices that improve RE and V\&V alignment. However, the identified papers seem to primarily focus on descriptive studies that describe the RE and V\&V misalignment cases rather than how to improve the alignment [11].
+Evaluations using case study research methodology dominates among the identified papers. Three studies were classified as case study-solutions, one paper was classified as validation research and one as a proposal.  Two out of four (\cite{ferguson2006empirical}, S17, \cite{melnik2004suitability}, S20 \cite{ricca2007talkingS20}) studies reported evolutions using experiments performed with students as subjects. It remains to be determined if students are representative population for studying alignment issues. On the other hand, four studies performed non-experimental evaluations (S2, S5, S9, \cite{bjarnason2014alignment}) and suggested the practices that strengthen RE and V&V alignment.
 Finally, framework-solution and framework-proposal received only 1 study each. No studies were found in survey, experimentation-proposal, solution and also in framework-validation, evolution categories. 
 The much higher number of identified case studies compared to experiments implies that conducting experiments in the context of alignment between RE and V&V is challenging because of the difficulty in operationalizing the alignment practices into the set of measurable independent variables. The other challenge is how to identify the causality in this study as there could be several confounding factors that influence the alignment between RE and V&V.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{Classification.png}
-    \caption{Classification of the studies based on the study type and research method.}
-    \label{fig:my_label}
-\end{figure}
 
-\subsection{Quality assessment based on rigor and relevance}\label{RigorAndRelevance}
 
-8 studies (S2, S4, S7, S5, S3, S9, \cite{bjarnason2014alignment}, S10) are classified as having highest rigor and relevance, see area A in Figure 3 and these are the most trustworthy results. Moreover, 5 studies (S8, \cite{metsa2007testing}, \cite{lobo2005local}, \cite{bjarnason2015industrial}, \cite{ferguson2006empirical}) are classified in the B category with high relevance but low rigor. On the other hand, 4 studies are classified in the C category as they represent low relevance and low rigor, see area C in Figure 3 and no studies were identified with high rigor and low relevance, see area B in Figure 3. The rigor and relevance scores for the identified studies are attached in Appendix B. 
+8 studies (S2, S4, S7, S5, S3, S9, \cite{bjarnason2014alignment}, S10) are classified as having highest rigor and relevance, see area A in Figure 3 and these are the most trustworthy results. Moreover, 5 studies (S8, \cite{metsa2007testing}, \cite{lobo2005local}, \cite{bjarnason2015industrialS14}, \cite{ferguson2006empirical}) are classified in the B category with high relevance but low rigor. On the other hand, 4 studies are classified in the C category as they represent low relevance and low rigor, see area C in Figure 3 and no studies were identified with high rigor and low relevance, see area B in Figure 3. The rigor and relevance scores for the identified studies are attached in Appendix B. 
 Evaluation of rigor and relevance scores for the identified studies resembles the usage of rubric based evaluation in education system [40]. This evaluation of rubrics helps to increase the reliability of assessments in the form of inter-rater agreement between researchers. 
 It is interesting to mention that the identified case studies have higher rigor and relevant scores than the experiments. A possible explanation for this may be that the experiments were not carried out in the industrial setting, unlike the case studies. Most of the identified studies with higher rigor relevance describe the RE practices, RE process factors, organizational factors and challenges during the alignment between RE and V&V, which were relevant to this research study. 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{RigorAndRelevance.png}
-    \caption{Rigor and Relevance Analysis}
-    \label{fig:my_label}
-\end{figure}
+
 
 \subsection{Quality Assessment criteria for secondary studies}
+Paper S1 is a mapping study 
+Paper S18 
+Paper S24 
+Paper S28 
+
 
 Quality assessment for secondary studies should be performed in order to minimize the bias and maximize the internal and external validity of the study[44]. The quality criteria such as specification of methodology, specification of clear results etc. and scale of measurement (Yes, Partially, No) are presented in appendix C. \todo[inline]{WNUK: Fix appendix C}
 
 \subsection{RE practices during the alignment}\label{ResultsPracticesDuringAllignment}
 
 In this section the analysis of primary studies is carried out regarding the RE practices that are used while improving the RE and V\&V alignment. 
-Six studies \cite{barmi2011alignment} \cite{kukkanen2009applying} \cite{uusitalo2008linking} \cite{bjarnason2014challenges} [\cite{bjarnason2015industrial}] [\cite{bjarnason2014alignment}] discussed different practices that are used during the alignment of RE and V\&V. From the Figure 3 it can be observed that most of these studies (\cite{kukkanen2009applying} \cite{uusitalo2008linking} \cite{bjarnason2014challenges} [\cite{bjarnason2014alignment}]) have high rigor and relevance. Uusitalo et al.[11] (S[5]) Performed an interview study to identify practices that are used for strengthening the alignment between RE and testing. This study has primarily concentrated on identification of practices used for strengthening the link between RE and testing and has also identified the challenges, benefits during application of these practices. During their study some of the interviewee considered linking people and linking documents are essential for alignment of RE and testing. Similar practice is also suggested in a case study conducted by Kukkanen et al. [10] (S2\cite{bjarnason2014challenges}) in order to identify the set of good practices that helps the concurrent improvement of RE and testing processes.  They also discuss the roles and their main responsibilities that are need to link requirements and testing. This case study results implies that, it is important to perform linking in three levels 1) linking processes 2) linking of people and 3) applying good practices along with linking of people and documents.
+Six studies \cite{barmi2011alignmentS1} \cite{kukkanen2009applyingS2} \cite{uusitalo2008linkingS5} \cite{bjarnason2014challengesS9} [\cite{bjarnason2015industrialS14}] [\cite{bjarnason2014alignment}] discussed different practices that are used during the alignment of RE and V\&V. From the Figure 3 it can be observed that most of these studies (\cite{kukkanen2009applyingS2} \cite{uusitalo2008linkingS5} \cite{bjarnason2014challengesS9} [\cite{bjarnason2014alignment}]) have high rigor and relevance. Uusitalo et al.[11] (S[5]) Performed an interview study to identify practices that are used for strengthening the alignment between RE and testing. This study has primarily concentrated on identification of practices used for strengthening the link between RE and testing and has also identified the challenges, benefits during application of these practices. During their study some of the interviewee considered linking people and linking documents are essential for alignment of RE and testing. Similar practice is also suggested in a case study conducted by Kukkanen et al. [10] (S2\cite{bjarnason2014challengesS9}) in order to identify the set of good practices that helps the concurrent improvement of RE and testing processes.  They also discuss the roles and their main responsibilities that are need to link requirements and testing. This case study results implies that, it is important to perform linking in three levels 1) linking processes 2) linking of people and 3) applying good practices along with linking of people and documents.
 
 Thereafter, Barmi et al. (\cite{barmi2011alignment}) has performed a systematic mapping study on alignment of requirements specification and testing. They identified the studies that discuss on linking specification and testing of requirements. They primarily focused on problems and set of good practices in aligning the requirements and testing. Similar practices are also discussed in a case study performed by Bjarnason et al.[33] (S[14]) to identify the scenarios for applying the alignment practices. These findings also includes benefits and challenges in using test cases for validating, eliciting, tracing, verifying and managing requirements. Overall, this case study provide how the discussed practices meet the requirement roles at different stages.
 
-Thereafter, in a multi case study of six companies Bjarnason et al. \cite{bjarnason2014challenges} (S[9]) has identified 27 different alignment practices, grouped into 10 categories. They also discuss challenges faced while application of practices such as cross role requirements reviews, product manager review types, early verification start, document level traces, test cases as requirements, traceability responsibility role, independent testing etc. These challenges are namely V\&V quality, full test coverage, verifying quality requirements etc. are mapped with the 27 alignment practices. These findings help practitioners and researchers for recognizing challenges faced and practices applied to address these challenges during the alignment between RE and V\&V.  
+Thereafter, in a multi case study of six companies Bjarnason et al. \cite{bjarnason2014challengesS9} (S[9]) has identified 27 different alignment practices, grouped into 10 categories. They also discuss challenges faced while application of practices such as cross role requirements reviews, product manager review types, early verification start, document level traces, test cases as requirements, traceability responsibility role, independent testing etc. These challenges are namely V\&V quality, full test coverage, verifying quality requirements etc. are mapped with the 27 alignment practices. These findings help practitioners and researchers for recognizing challenges faced and practices applied to address these challenges during the alignment between RE and V\&V.  
 
 In another study Bjarnason et al.[34] (S[16])discuss alignment practices that affect the distances in software development. And some of the studies S [14] have not mentioned about impact of the identified practices during the alignment.
 
-The practices considered while applying alignment between RE and V\&V are \cite{barmi2011alignment} \cite{kukkanen2009applying} \cite{uusitalo2008linking} \cite{bjarnason2014challenges} [\cite{bjarnason2015industrial}] [\cite{bjarnason2014alignment}] presented in Appendix D. As mentioned previously these aspects cover the practices that are used during the alignment of requirements and testing. These practices are needed for an organization in to order to achieve the RE and V\&V alignment. This constitutes to the identification of the RE practices that are used during the alignment of RE and V\&V S[9], S[16], S\cite{bjarnason2014challenges}, S[5]. The obtained literature is analyzed in order to identify RE practices used in specific to requirement phases. Identified RE practices through literature are mentioned and discussed below.
+The practices considered while applying alignment between RE and V\&V are \cite{barmi2011alignment} \cite{kukkanen2009applyingS2} \cite{uusitalo2008linkingS5} \cite{bjarnason2014challenges} [\cite{bjarnason2015industrialS14}] [\cite{bjarnason2014alignment}] presented in Appendix D. As mentioned previously these aspects cover the practices that are used during the alignment of requirements and testing. These practices are needed for an organization in to order to achieve the RE and V\&V alignment. This constitutes to the identification of the RE practices that are used during the alignment of RE and V\&V S[9], S[16], S\cite{bjarnason2014challengesS9}, S[5]. The obtained literature is analyzed in order to identify RE practices used in specific to requirement phases. Identified RE practices through literature are mentioned and discussed below.
 
-RE practices are at the core of aligning the RE and V\&V\cite{bjarnason2014challenges}. These practices include involving development near roles, informal communication within organization and customer communication in the requirement process.
+RE practices are at the core of aligning the RE and V\&V\cite{bjarnason2014challengesS9}. These practices include involving development near roles, informal communication within organization and customer communication in the requirement process.
 
 \begin{itemize}
-    \item \textbf{Customer communication at all levels and in all phases of development (S9\_1, \cite{bjarnason2014alignment}\_18)}: Communication can be made in the mode of customer-supplier for co-location, customer based interaction used for demonstrating executable software or agreed acceptance criteria between customer and supplier \cite{bjarnason2014challenges}.For smaller companies with bespoke requirements interaction is directly with a physical customer. Whereas, in larger companies customer proxy is used instead of real customer for the interaction \cite{bjarnason2014challenges}. In each development team a person should take responsibility for the feature scope. However, that person should be available to communicate throughout the development and the validation of particular feature \cite{bjarnason2014challenges}. Therefore, this practice should be carried out all requirements phases to ensure the communication with customers.
+    \item \textbf{Customer communication at all levels and in all phases of development (S9\_1, \cite{bjarnason2014alignment}\_18)}: Communication can be made in the mode of customer-supplier for co-location, customer based interaction used for demonstrating executable software or agreed acceptance criteria between customer and supplier \cite{bjarnason2014challengesS9}.For smaller companies with bespoke requirements interaction is directly with a physical customer. Whereas, in larger companies customer proxy is used instead of real customer for the interaction \cite{bjarnason2014challengesS9}. In each development team a person should take responsibility for the feature scope. However, that person should be available to communicate throughout the development and the validation of particular feature \cite{bjarnason2014challengesS9}. Therefore, this practice should be carried out all requirements phases to ensure the communication with customers.
     \item \textbf{Involving developers and testers in detailing requirements (S9\_2,  \cite{bjarnason2014alignment}\_19): }
-    This practice is considered as a deliberate strategy for conveying the main goal of the product to the engineers rather than detailing requirements. Here development organization will take the responsibility of detailing the specification. This may be considered as a risky practice if there is a weak awareness of the market perspectives or customers \cite{bjarnason2014challenges}. This practice also consist of involving testers at the early stages of the entire project[11]. This benefits in improving the testers gaining knowledge on domain\cite{bjarnason2014challenges}. 
-    \item \textbf{Cross role requirement reviews (S9\_3, \cite{bjarnason2014alignment}\_20)} : This practice is applied to ensure that requirements are understood and testable. The practical procedures for the review of requirements are namely early review of requirements by testers and reviewing the requirements while creating test cases. Furthermore, this practice enhances both quality of requirements and communication resulting in strengthening the alignment of the testing effort. Therefore, this practice helps in identifying problems with the test specification at early stages \cite{bjarnason2014challenges}. 
-    \item \textbf{Defining a requirements review responsible (S9\_4):} Kukkanen et al. [10] discovered the role of assurance manager overlaps with test and requirement manager roles. They stress the importance of an additional responsible role for requirement reviews. Hence, defining a requirement review responsible was mentioned as a practice \cite{bjarnason2014challenges}. This ensures that requirement reviews are performed. This role is decided during the requirement analysis phase.
+    This practice is considered as a deliberate strategy for conveying the main goal of the product to the engineers rather than detailing requirements. Here development organization will take the responsibility of detailing the specification. This may be considered as a risky practice if there is a weak awareness of the market perspectives or customers \cite{bjarnason2014challengesS9}. This practice also consist of involving testers at the early stages of the entire project[11]. This benefits in improving the testers gaining knowledge on domain\cite{bjarnason2014challengesS9}. 
+    \item \textbf{Cross role requirement reviews (S9\_3, \cite{bjarnason2014alignment}\_20)} : This practice is applied to ensure that requirements are understood and testable. The practical procedures for the review of requirements are namely early review of requirements by testers and reviewing the requirements while creating test cases. Furthermore, this practice enhances both quality of requirements and communication resulting in strengthening the alignment of the testing effort. Therefore, this practice helps in identifying problems with the test specification at early stages \cite{bjarnason2014challengesS9}. 
+    \item \textbf{Defining a requirements review responsible (S9\_4):} Kukkanen et al. [10] discovered the role of assurance manager overlaps with test and requirement manager roles. They stress the importance of an additional responsible role for requirement reviews. Hence, defining a requirement review responsible was mentioned as a practice \cite{bjarnason2014challengesS9}. This ensures that requirement reviews are performed. This role is decided during the requirement analysis phase.
     
-    \item \textbf{Involving domain experts in requirement definition (S9\_5):} This practice is applied to achieve better co-ordination between system capabilities and requirements. This leads to defining more realistic requirements \cite{bjarnason2014challenges}. By applying this practice, domain experts will know if they understand the requirement correctly or not \cite{bjarnason2014challenges}. This practice also considered for supporting the alignment by improving the quality of requirements, which were the basis for software testing.
+    \item \textbf{Involving domain experts in requirement definition (S9\_5):} This practice is applied to achieve better co-ordination between system capabilities and requirements. This leads to defining more realistic requirements \cite{bjarnason2014challengesS9}. By applying this practice, domain experts will know if they understand the requirement correctly or not \cite{bjarnason2014challengesS9}. This practice also considered for supporting the alignment by improving the quality of requirements, which were the basis for software testing.
     
-    \item \textbf{Documentation of requirement decision rationales (S9\_6):} This practice increases the synchronization between different project phases by supporting transfer of soft communication between different roles S[2]. After completion of development, this information will support testers in evaluating customer defect reports and in identifying required improvements. However, this information should be easily connected and available to the test cases and requirements for the use of testers in later stage of development \cite{bjarnason2014challenges}.
+    \item \textbf{Documentation of requirement decision rationales (S9\_6):} This practice increases the synchronization between different project phases by supporting transfer of soft communication between different roles S[2]. After completion of development, this information will support testers in evaluating customer defect reports and in identifying required improvements. However, this information should be easily connected and available to the test cases and requirements for the use of testers in later stage of development \cite{bjarnason2014challengesS9}.
 
 \end{itemize}
 
 
-The above mentioned RE practices are discussed in literature that influences the alignment between RE and V\&V. These practices will create positive effect on RE and V\&V alignment\cite{bjarnason2014challenges}[10][11][15].Whereas, Bjarnason et al. has discussed about the additional practices that were identified through the analysis performed for constructing the GAP model[34]. Following are the identified RE practices used for RE and Testing (RET) alignment by Bjarnason et al [34].
+The above mentioned RE practices are discussed in literature that influences the alignment between RE and V\&V. These practices will create positive effect on RE and V\&V alignment\cite{bjarnason2014challengesS9}[10][11][15].Whereas, Bjarnason et al. has discussed about the additional practices that were identified through the analysis performed for constructing the GAP model[34]. Following are the identified RE practices used for RE and Testing (RET) alignment by Bjarnason et al [34].
 
 \begin{itemize}
 \item 	Use of customer proxy role (\cite{bjarnason2014alignment}\_1).
@@ -332,7 +413,7 @@ The above mentioned RE practices are discussed in literature that influences the
 
  Bjarnason et al. [34] mentioned about the additional identified practices. However, they have not discussed their impact on the study of alignment. They primarily focused on how these practices are showing impact on distances i.e. geographical distance, organizational distance, cognitive distance. In specific, they discussed how two RE practices (i.e. product manager physically present to developers \& testers, collaborative definition of quality requirements) impact the distances.
 
-It is important to notice that some practices such as requirements test case traces, same abstraction levels for requirement specifications are not considered as RE practices. This is due to fact that Bjarnason et al.\cite{bjarnason2014challenges}, have simplified the view of RE and V\&V alignment, by considering traceability activities to be different from RE practices. Therefore, in this study we considered only RE practices without traceability practices as suggested by Bjarnason et al. \cite{bjarnason2014challenges}. 
+It is important to notice that some practices such as requirements test case traces, same abstraction levels for requirement specifications are not considered as RE practices. This is due to fact that Bjarnason et al.\cite{bjarnason2014challengesS9}, have simplified the view of RE and V\&V alignment, by considering traceability activities to be different from RE practices. Therefore, in this study we considered only RE practices without traceability practices as suggested by Bjarnason et al. \cite{bjarnason2014challengesS9}. 
 
 
 
@@ -372,29 +453,29 @@ Many of these RE practices namely customer communication at all requirement leve
 \subsection{Analysis of literature regarding RE process factors during the alignment}\label{ResultsProcessFactors}
 
 Primary studies were also analyzed in order to identify the influence of various RE process factors during the alignment. Identification of the impact of RE process factors while implementing practices is one of the areas in this research. 
-Many of the authors have tried to provide influence of RE process factors during the alignment. Sabaliauskaite et al.  mentioned the influence of RE process factors i.e. source of requirements, however without deeper analysis. The emphasis was made on identifying the challenges rather than influence of process factors on the alignment. Similarly, Bjarnason et al. [33] discussed the process factors, while performing a case study to find the benefits and challenges in using test cases for elicitation, validating, verifying, tracing and managing requirements. During this study they have discussed the consideration of process factors i.e. source of requirements, requirements in typical project. In a similar study to this, Kukkanen et al.[10] stressed to know the importance of factors which may shorten the development time and improve the quality. In another study\cite{bjarnason2014challenges}, Bjarnason et al. also considered several process factors while applying different alignment practices. They mainly focused on discussing the challenges faced while applying the identified set of alignment practices along with some process factors. Similarly, the studies [34]\cite{wnuk2014delicate} have reported influence of the RE process factors while applying the alignment practices. 
+Many of the authors have tried to provide influence of RE process factors during the alignment. Sabaliauskaite et al.  mentioned the influence of RE process factors i.e. source of requirements, however without deeper analysis. The emphasis was made on identifying the challenges rather than influence of process factors on the alignment. Similarly, Bjarnason et al. [33] discussed the process factors, while performing a case study to find the benefits and challenges in using test cases for elicitation, validating, verifying, tracing and managing requirements. During this study they have discussed the consideration of process factors i.e. source of requirements, requirements in typical project. In a similar study to this, Kukkanen et al.[10] stressed to know the importance of factors which may shorten the development time and improve the quality. In another study\cite{bjarnason2014challengesS9}, Bjarnason et al. also considered several process factors while applying different alignment practices. They mainly focused on discussing the challenges faced while applying the identified set of alignment practices along with some process factors. Similarly, the studies [34]\cite{wnuk2014delicateS8} have reported influence of the RE process factors while applying the alignment practices. 
 \begin{itemize}
     \item Distance between development of requirements and testing: Sometimes, development units and testing units will not give enough attention and consideration to the requirements [6][45]. During development developers do not always review requirements and this might be due to lack of involvement of testers and developers in requirement reviews[6].
     \item Testability of requirements: Testability of the requirements is not considered by the requirement engineers. This leads in turning out requirements to be non-testable [6]. Therefore, this might show negative impact on the alignment. 
-    \item	Source of requirements: Source of requirements can be market driven and bespoke. However, some organizations with more number of requirements will use both bespoke and market driven development as a source of requirements \cite{kukkanen2009applying}, [33]. Organizations with bespoke requirements will interact directly with a physical customer whereas, customer proxy will be used in organizations with market driven development \cite{bjarnason2014challenges}.  
+    \item	Source of requirements: Source of requirements can be market driven and bespoke. However, some organizations with more number of requirements will use both bespoke and market driven development as a source of requirements \cite{kukkanen2009applyingS2}, [33]. Organizations with bespoke requirements will interact directly with a physical customer whereas, customer proxy will be used in organizations with market driven development \cite{bjarnason2014challengesS9}.  
 \end{itemize}
 
 \subsection{Organizational Factors that Influence Alignment}\label{ResultsOrgFactors}
 In this section, the identified studies were analyzed in order to identify the influence of organizational factors during the alignment of RE and V&V. Identification of the impact of organizational factors is one of the research areas in this research.
-Many of the authors tried to provide influence of organizational factors during the alignment.  Sabaliauskaite et al. [6] discussed the influence of organizational factors i.e. organizational structure, gaps in communication across different organizational units, however without details.  Similarly, Bjarnason et al.[34] discussed influence of organizational factors during a study to present an initial version of a theory based on the GAP model. During this study they have discussed the organizational factors that influence the alignment i.e. size of an organization, domain and range of an organization. In another case study \cite{bjarnason2014challenges} Bjarnason et.al also considered different organizational factors for applying alignment practices. They focused on discussing the challenges faced while applying the identified set of alignment practices along with organizational factors. 
+Many of the authors tried to provide influence of organizational factors during the alignment.  Sabaliauskaite et al. [6] discussed the influence of organizational factors i.e. organizational structure, gaps in communication across different organizational units, however without details.  Similarly, Bjarnason et al.[34] discussed influence of organizational factors during a study to present an initial version of a theory based on the GAP model. During this study they have discussed the organizational factors that influence the alignment i.e. size of an organization, domain and range of an organization. In another case study \cite{bjarnason2014challengesS9} Bjarnason et.al also considered different organizational factors for applying alignment practices. They focused on discussing the challenges faced while applying the identified set of alignment practices along with organizational factors. 
 
 \begin{itemize}
-    \item Size of an organization: Bjarnason et al. \cite{bjarnason2014challenges} emphasized that the alignment vary between the companies depending upon their size. Organizations with smaller project groups can handle alignment through a combination of informal and formal meetings. Whereas, organizations with larger scale projects need more efficient tools and processes to ensure the co-ordination of communication between different hierarchies and phases in an organization\cite{bjarnason2014challenges}. The alignment supported by tools was well in medium sized projects, but for the larger companies there was an occurrence of frequent alignment challenges \cite{kukkanen2009applying}. Therefore, size of the organization plays a crucial role in applying alignment practices[34].
+    \item Size of an organization: Bjarnason et al. \cite{bjarnason2014challengesS9} emphasized that the alignment vary between the companies depending upon their size. Organizations with smaller project groups can handle alignment through a combination of informal and formal meetings. Whereas, organizations with larger scale projects need more efficient tools and processes to ensure the co-ordination of communication between different hierarchies and phases in an organization\cite{bjarnason2014challengesS9}. The alignment supported by tools was well in medium sized projects, but for the larger companies there was an occurrence of frequent alignment challenges \cite{kukkanen2009applyingS2}. Therefore, size of the organization plays a crucial role in applying alignment practices[34].
     \item Gaps in communication across different organizational units: Sabaliauskaite et al. [6] discusses gaps in communication across different organizational units affect the alignment. In larger companies gaps in communication and co-ordination among different organizational units frequently arises, especially at the high level[6]. Furthermore, different persons regarding the gaps in communication will give different answers. However, it is difficult to find the root cause of each challenge. Therefore, this could affect the alignment. Especially, the alignment gets affected at a high abstraction level of the processes and requirements[6] [16].
     \item Distance in time between the development of requirement and test artifacts: Sabaliauskaite et al.[6] discussed that distance in time between the development of requirements and test artifacts can create alignment problems. They said that requirements are being approved without having any test cases associated with them. This can end up in having non-testable requirements[6], which affects the alignment. 
-    \item •	Organizational structure: In [6]\cite{bjarnason2014challenges}[33], it was mentioned that organizational structure affect the alignment. If the organization is very large and many organizational units are involved and every organizational unit may not follow the same documentation process and standard for the documentation. This may raise the issues in the organization regarding communication. Hence, this may negatively affect the alignment.
+    \item •	Organizational structure: In [6]\cite{bjarnason2014challengesS9}[33], it was mentioned that organizational structure affect the alignment. If the organization is very large and many organizational units are involved and every organizational unit may not follow the same documentation process and standard for the documentation. This may raise the issues in the organization regarding communication. Hence, this may negatively affect the alignment.
     \item Domain/system type: Bjarnason et al.[34] mentioned that safety-critical development systems are externally motivated for applying alignment practices. Whereas in non-safety critical systems the motivation is purely internal[34]. Due to low awareness of the cost vs. benefits of RE and V&V alignment, internal motivation is considered as weak in some organizations.
 \end{itemize}
 
 \subsection{Challenges Faced when Implementing Alignment}\label{ResultsChallenges}
 To identify the challenges that are faced while implementing alignment practices the analysis was done two fold: first for challenges that are faced during alignment and then for the challenges or problems that are addressed by alignment practices.
 Many authors tried to provide the challenges that are lack of alignment practices. Uusitalo et al. [11] conducted an empirical study to present a set of good practices that are applied to create a strong link between RE and testing. During the discussion of alignment practices they mentioned about the challenges occurred namely availability of testers during early stage of the project, suggestions given by testers are often in the wrong scope, maintenance of traceability between requirements and testing, adding new requirements etc. During this study most interviewees reported deficiencies in the requirement process to be a large hindrance to linking RE and V&V together. Kukkanen et al.[10] Conducted a case study to identify a set of new practices that helped to perform the alignment between RE and V&V. They discussed the frequency of some challenges when applying good practices namely communication, metrics and visibility, roles and responsibilities, review teams, reviews, change control and tools. In addition, they have mentioned that keeping test cases up-to date during requirement change process is a major challenge.  
-Similarly, Sabaliauskaite et al.[6] conducted an empirical study to identify key challenges in aligning requirements and verification processes. It was observed that practitioners use findings of these studies as a basis for investigating alignment. They mentioned issues related to organization and processes, people, tools, requirement process, testing process, change management, traceability and management. In this study, it was observed that communication and co-ordination between different units with in a company is a major challenge along with traceability and software tools[14]. Bjarnason et al. \cite{bjarnason2014challenges} conducted a multi-unit case study to identify current industry challenges and practices in aligning RE and V&V. In this study, an overview of relationships between the alignment challenges and practices is provided. This mapping is considered in addressing most pressing alignment challenges. Thereafter, in a case study Larsson et al.[46] discuss identified alignment challenges and their occurrence related to development of large information system for public sector. In this case study, they divided the challenges into two categories: the most occurred such as aligning goals with in an organization, co-operating successfully etc. and least occurred such as full test coverage, defining a good verification process, tracing between requirements and test cases.
+Similarly, Sabaliauskaite et al.[6] conducted an empirical study to identify key challenges in aligning requirements and verification processes. It was observed that practitioners use findings of these studies as a basis for investigating alignment. They mentioned issues related to organization and processes, people, tools, requirement process, testing process, change management, traceability and management. In this study, it was observed that communication and co-ordination between different units with in a company is a major challenge along with traceability and software tools[14]. Bjarnason et al. \cite{bjarnason2014challengesS9} conducted a multi-unit case study to identify current industry challenges and practices in aligning RE and V&V. In this study, an overview of relationships between the alignment challenges and practices is provided. This mapping is considered in addressing most pressing alignment challenges. Thereafter, in a case study Larsson et al.[46] discuss identified alignment challenges and their occurrence related to development of large information system for public sector. In this case study, they divided the challenges into two categories: the most occurred such as aligning goals with in an organization, co-operating successfully etc. and least occurred such as full test coverage, defining a good verification process, tracing between requirements and test cases.
 The challenges that are identified in aligning requirements with verification and validation are:
 \begin{itemize}
     \item  Ch1: Different standards of the documentation.
@@ -428,17 +509,17 @@ Following are the identified challenges that are addressed by RE practices from 
 
 \begin{itemize}
     \item T1: Aligning goals and perspectives within organization (Ch. 5)
-The synchronization between requirements and testing is affected by unaligned goals and causes confusion between organizational units of the joint development projects\cite{bjarnason2014challenges}, [6].
+The synchronization between requirements and testing is affected by unaligned goals and causes confusion between organizational units of the joint development projects\cite{bjarnason2014challengesS9}, [6].
 \item  T2: Cooperating successfully (Ch. 6)
-Due to lack of co-operation between requirements related people, developers and testers will affect alignment negatively\cite{bjarnason2014challenges}. Therefore, testers should have a good communication with requirements related and development related roles, to increase the alignment. Lack of awareness of the responsibilities and tasks can also negatively affect the alignment \cite{bjarnason2014challenges}, [6].
+Due to lack of co-operation between requirements related people, developers and testers will affect alignment negatively\cite{bjarnason2014challengesS9}. Therefore, testers should have a good communication with requirements related and development related roles, to increase the alignment. Lack of awareness of the responsibilities and tasks can also negatively affect the alignment \cite{bjarnason2014challengesS9}, [6].
 \item T3: Requirements specification quality
- Defining clear and verifiable requirements (Ch. 8) is considered as a major challenge in enabling good alignment between requirements and V&V \cite{bjarnason2014challenges}. Non-verifiable requirements will cause problems to developers and testers during the development of customer-correct software. Defining clear requirements will help for successful alignment [33]. Complete requirements (Ch. 9) will ensure the full test coverage by verifying full functionality and quality aspects of the requirements. Keeping requirements documentation updated (Ch. 10) is consider as another challenge for aligning requirements and V&V \cite{bjarnason2014challenges}. 
+ Defining clear and verifiable requirements (Ch. 8) is considered as a major challenge in enabling good alignment between requirements and V&V \cite{bjarnason2014challengesS9}. Non-verifiable requirements will cause problems to developers and testers during the development of customer-correct software. Defining clear requirements will help for successful alignment [33]. Complete requirements (Ch. 9) will ensure the full test coverage by verifying full functionality and quality aspects of the requirements. Keeping requirements documentation updated (Ch. 10) is consider as another challenge for aligning requirements and V&V \cite{bjarnason2014challengesS9}. 
 \item T4: V&V quality
-To full fill the final requirements and expectations of the customer full test coverage (Ch. 11) is considered as an important aspect [6], [47]. As mentioned  earlier, non-verifiable requirements cause main difficulties to achieve full test coverage of requirements and lack of traceability will affect in whether achieving full test coverage or not \cite{bjarnason2014challenges}, [6], [47]. Late requirements changes (Ch. 12) are also considered as other factor that affects the full test coverage to requirements. Verifying quality requirements (Ch. 14) and test cases are considered as another challenge in aligning with requirements \cite{bjarnason2014challenges}[48].
+To full fill the final requirements and expectations of the customer full test coverage (Ch. 11) is considered as an important aspect [6], [47]. As mentioned  earlier, non-verifiable requirements cause main difficulties to achieve full test coverage of requirements and lack of traceability will affect in whether achieving full test coverage or not \cite{bjarnason2014challengesS9}, [6], [47]. Late requirements changes (Ch. 12) are also considered as other factor that affects the full test coverage to requirements. Verifying quality requirements (Ch. 14) and test cases are considered as another challenge in aligning with requirements \cite{bjarnason2014challengesS9}[48].
 \item T5: Requirements abstraction levels
- Defining requirements at different abstraction stages will ensures test cases in line with the requirements along with a good coverage of test cases \cite{bjarnason2014challenges}. Coordinating requirements at different abstraction levels (Ch. 16) is considered as another challenge because it is hard to co-ordinate breaking down detailed requirements into detailed requirements at component level \cite{bjarnason2014challenges}.
+ Defining requirements at different abstraction stages will ensures test cases in line with the requirements along with a good coverage of test cases \cite{bjarnason2014challengesS9}. Coordinating requirements at different abstraction levels (Ch. 16) is considered as another challenge because it is hard to co-ordinate breaking down detailed requirements into detailed requirements at component level \cite{bjarnason2014challengesS9}.
 \item  T6: Outsourcing or offshoring of components or testing (Ch. 24)
-Tracing between artefacts and implementing agreed detailed requirement to test are the challenges created by outsourcing or offshoring of components \cite{bjarnason2014challenges}. Timing plays crucial role in tracing component requirement specification during the outsourcing at early in the development of the project. Specification of the test cases related to testing type is important, when test is outsourced \cite{bjarnason2014challenges}.
+Tracing between artefacts and implementing agreed detailed requirement to test are the challenges created by outsourcing or offshoring of components \cite{bjarnason2014challengesS9}. Timing plays crucial role in tracing component requirement specification during the outsourcing at early in the development of the project. Specification of the test cases related to testing type is important, when test is outsourced \cite{bjarnason2014challengesS9}.
 
 \end{itemize}
 
@@ -483,7 +564,7 @@ From the identified research questions, it can be observed that the aim of this 
 
 5.	Most authors performed experiments in self-created environment for the identification of different alignment practices and addressing challenges. Experiments on industrial settings/environments are not performed at all. It is also important to consider and analyze the application of alignment practices in self-created environment versus industrial environment.
 
-6.	None of the identified studies detect\discuss all the RE alignment practices. Studies on average covers two to three RE alignment practices. Both case studies conducted by Bjarnason et al. \cite{bjarnason2014challenges}[34] only captured nine RE alignment practices.
+6.	None of the identified studies detect\discuss all the RE alignment practices. Studies on average covers two to three RE alignment practices. Both case studies conducted by Bjarnason et al. \cite{bjarnason2014challengesS9}[34] only captured nine RE alignment practices.
 
 7.	Most of the identified RE process factors and organizational factors shows negative impact during the alignment between RE and V&V. There is a need for identification of further factors that show influence during the RE and V&V alignment.
 
